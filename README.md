@@ -18,13 +18,13 @@ from flightradar import Schedule
 var = Schedule('AIRPORT CODE') # e.g. Schedule('AXA')
 var.arrivals # List of arrivals (len = 8, type = List)
 var.arrivals[0] # First arrival, type Dict
-{
-  'time' : time of arrival / departure
-  'flight' : flight code
-  'location' : arrive from / departs to
-  'airline' : company
-  'aircraft' : aircraft
-  'status' : status
-}
+#{
+#  'time' : time of arrival / departure
+#  'flight' : flight code
+#  'location' : arrive from / departs to
+#  'airline' : company
+#  'aircraft' : aircraft
+#  'status' : status
+#}
 var.arrivals[0]['status'] # returns status of the first arrival
 var.departures # similar properties as arrivals, but for departures
