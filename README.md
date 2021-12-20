@@ -13,7 +13,7 @@ IMPORTANT: Requires suitable Chrome webdriver!
 This python code is written to only fetch the first 8 arrivals and departures with respect to the time code is called
 place this file in the same folder as your code
 
-`from flightradar import Schedule 
+```from flightradar import Schedule 
 var = Schedule('AIRPORT CODE') # e.g. Schedule('AXA')
 var.arrivals # List of arrivals (len = 8, type = List)
 var.arrivals[0] # First arrival, type Dict
@@ -25,5 +25,5 @@ var.arrivals[0] # First arrival, type Dict
   'aircraft' : aircraft
   'status' : status
 }
- var.arrivals[0]['status'] # returns status of the first arrival
- var.departures # similar properties as arrivals, but for departures`
+var.arrivals[0]['status'] # returns status of the first arrival
+var.departures # similar properties as arrivals, but for departures```
