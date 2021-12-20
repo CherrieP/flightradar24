@@ -10,8 +10,8 @@ IMPORTANT: Requires suitable Chrome webdriver!
 - Search for chromedriver.exe version XX (e.g. 96)
 - Place the exe file in a folder (preferably at root) and create environment PATH to that foder (e.g. C:/webdriver)
 
-This python code is written to only fetch the first 8 arrivals and departures with respect to the time code is called
-place this file in the same folder as your code
+This python code is written to only fetch the first 8 arrivals and departures with respect to the time code is called.
+Place this file in the same folder as your code
 
 ```py
 from flightradar import Schedule 
