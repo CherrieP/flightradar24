@@ -2,6 +2,25 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup as bs4
 
+class Flight():
+    def __init__(self, data: dict):
+        self.time = data['time']
+        self.flight = data['flight']
+        self.location = data['location']
+        self.airline = data['airline']
+        self.aircraft = data['aircraft']
+        self.status = data['status']
+        self.dict = data
+
+    def to_dict(self):
+        return self.dict
+
+    def __str__(self):
+        return f'Flight<{self.flight}>'
+
+    def __repr__(self):
+        return f'Flight<{self.flight}>'
+
 class Schedule():
 
     arrivals = []
@@ -45,6 +64,6 @@ class Schedule():
                 'status' : status
             }
 
-            dataList.append(data)
+            dataList.append(Flight(data))
 
         return dataList
